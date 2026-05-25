@@ -1,0 +1,64 @@
+body {
+    background-color: #0c1b2e;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form */
+.task-form {
+    background-color: #243B55;
+}
+
+/* Table theme override */
+.table-dark {
+    --bs-table-bg: #243b56;
+    --bs-table-striped-bg: #2c4666;
+    --bs-table-hover-bg: #335276;
+}
+
+/* Primary button */
+.btn-primary {
+    background-color: #4595f2;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #3391F0;
+}
+
+/* Action buttons (icons) */
+.action-btn {
+    width: 32px;
+    height: 32px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255,255,255,0.8);
+    border-radius: 6px;
+
+    background-color: transparent;
+    color: white;
+
+    margin-left: 6px;
+
+    transition: all 0.2s ease;
+}
+
+.action-btn:hover {
+    background-color: rgba(255,255,255,0.15);
+}
+
+/* Completed task */
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(6px);
+}

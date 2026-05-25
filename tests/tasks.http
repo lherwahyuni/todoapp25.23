@@ -1,0 +1,35 @@
+### GET
+GET http://localhost:3000/tasks
+
+
+### POST
+POST http://localhost:3000/tasks/new
+Content-Type: application/json
+
+{
+  "title": "Test Task",
+  "dueDate": "2026-03-20"
+}
+
+
+### PATCH
+PATCH http://localhost:3000/tasks/complete/2
+
+
+### PATCH
+PATCH http://localhost:3000/tasks/incomplete/3
+
+
+### DELETE
+DELETE http://localhost:3000/tasks/delete/<REPLACE WITH ACTUAL ID>
+
+
+
+### PUT
+PUT http://localhost:3000/tasks/edit/<REPLACE WITH ACTUAL ID>
+Content-Type: application/json
+
+{
+  "title": "Test Task (edited)",
+  "dueDate": "2028-07-23"
+}
