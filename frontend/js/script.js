@@ -4,7 +4,6 @@ const form = document.getElementById("newTaskForm");
 const url = "http://localhost:3000";
 const url = "https://todoapp25-23.onrender.com";
 
-
 //------------HELPER FUNCTIONS-----------
 
 // Formats the UI layout of each task
