@@ -1,7 +1,6 @@
 //------------GLOBAL VARIABLES------------
 
 const form = document.getElementById("newTaskForm");
-const url = "http://localhost:3000";
 const url = "https://todoapp25-23.onrender.com";
 
 
@@ -104,7 +103,7 @@ try {
     dueDate: form.dueDate.value
   }
 
-  const response = await fetch("http://localhost:3000/tasks/new", {
+  const response = await fetch('${url}/tasks/new', {
     method: "POST",
     headers: { "Content-Type": "application/json"},
     body: JSON.stringify(taskData)
